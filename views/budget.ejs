@@ -1,0 +1,330 @@
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="dashboard.html" class="brand"><i class="icon-leaf">SPend Plans</i></a>
+ 
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="login.html">Logout</a>
+                            </li>
+                            
+                        </ul>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="body-container">
+            <div id="body-content">
+                
+                    <div class="body-nav body-nav-horizontal body-nav-fixed">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="budget">
+                                        <i class="icon-money icon-large"></i> Budget
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="personnel">
+                                        <i class="icon-user icon-large"></i> Personnel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="operations">
+                                        <i class="icon-cogs icon-large"></i> Operations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tasks">
+                                        <i class="icon-tasks icon-large"></i> Tasks
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="contracts">
+                                        <i class="icon-calendar icon-large"></i> Contracts
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                
+               
+                    <div class="row">
+                        <div class="span16">
+                                <h3>Budget
+                                </h3>
+                        </div>
+                    </div>
+               
+        
+    <section class="page container">
+       
+        <div class="row">
+            
+            <div class="span16">
+                <div class="row">
+
+                    <div class="span8">
+                        
+
+<script type="text/javascript">
+    google.load('visualization', '1', {'packages': ['corechart']});
+    google.setOnLoadCallback(drawVisualization);
+    
+    function drawVisualization() {
+        visualization_data = new google.visualization.DataTable();
+        
+        visualization_data.addColumn('string', 'SE 6');
+        
+        visualization_data.addColumn('number', 'Budget');
+        
+        
+        visualization_data.addRow(['SE 61', 2000000]);
+        
+        visualization_data.addRow(['SE 62', 2500000]);
+        
+        visualization_data.addRow(['SE 63', 3000000]);
+        
+        visualization_data.addRow(['SE 64', 3500000]);
+        
+        visualization_data.addRow(['SE 65', 4000000]);
+        
+      
+        visualization = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        
+        visualization.draw(visualization_data, {title: 'SE 6 Budget Allocation', height: 250});
+
+        
+    }
+</script>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <i class="icon-pie-chart"></i>
+                                <h5>Charts</h5>
+                                
+                            </div>
+                            <div class="box-content">
+                                <div align="right">
+                                    Charts:
+                                    <i class="icon-bar-chart"></i>
+                                    <i class="icon-line-chart"></i>
+                                    <i class="icon-pie-chart"></i>
+                                </div>
+                                <div align="left">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                Total Budget:                                      
+                                            </td>
+                                            <td>
+                                             $16,000,000</li>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Allocated:
+                                            </td>
+                                            <td>
+                                                $14,000,000
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Unallocated:
+                                            </td>
+                                            <td>
+                                                $2,000,000
+                                            </td>
+                                        </tr>
+                                    </table>
+                                       
+                                </div>
+                                
+                                <div id="piechart"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="box pattern pattern-sandstone">
+                            <div class="box-header">
+                                <i class="icon-table"></i>
+                                <h5>
+                                    Table
+                                </h5>
+                            </div>
+                            <div class="box-content box-table">
+                                <table id="sample-table" class="table table-hover table-bordered tablesorter">
+                                    <thead>
+                                        <tr>
+                                            <th>Branch</th>
+                                            <th>Budget</th>
+                                            <th class="td-actions">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SE 61</td>
+                                            <td>2,000,000</td>
+                                            <td class="td-actions">
+                                                <a href="javascript:;" class="btn btn-small btn-info" title="Edit">
+                                                    <i class="btn-icon-only icon-pencil"></i>
+                                                </a>
+
+                                               
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SE 62</td>
+                                            <td>2,500,000</td>
+                                            <td class="td-actions">
+                                                <a href="javascript:;" class="btn btn-small btn-info">
+                                                    <i class="btn-icon-only icon-pencil"></i>
+                                                </a>
+
+                                               
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SE 63</td>
+                                            <td>3,000,000</td>
+                                            <td class="td-actions">
+                                                <a href="javascript:;" class="btn btn-small btn-info" title="edit">
+                                                    <i class="btn-icon-only icon-pencil"></i>
+                                                </a>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SE 64</td>
+                                            <td>3,500,000</td>
+                                            <td class="td-actions">
+                                                <a href="javascript:;" class="btn btn-small btn-info" title="edit">
+                                                    <i class="btn-icon-only icon-pencil"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>SE 65</td>
+                                            <td>4,000,000</td>
+                                            <td class="td-actions">
+                                                <a href="javascript:;" class="btn btn-small btn-info" title="edit">
+                                                    <i class="btn-icon-only icon-pencil"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span8">
+                        <div class="box">
+                            <div class="box-header" >
+                                <i class="icon-exclamation-sign"></i>
+                                <h5>Alerts</h5>
+                                <button class="btn btn-box-right" data-toggle="collapse" data-target=".box-hide-me">
+                            <i class="icon-reorder"></i>
+                        </button>
+                            </div>
+                            <div class="box-content">
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="box-hide-me box-content collapse out">
+                                <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="box">
+                            <div class="box-header">
+                                <i class="icon-files"></i>
+                                <h5>Reports</h5>
+                                <button class="btn btn-box-right" data-toggle="collapse" data-target=".box-hide-me">
+                            <i class="icon-reorder"></i>
+                        </button>
+                            </div>
+                            <div class="box-content">
+                                <p>
+                                <i class="icon-file"></i> Budget Report for the 1st fiscal year
+                                </p>
+                                <p>
+                                <i class="icon-file"></i> Report for line items more than $1,000,000
+                                </p>
+                                <p>
+                                <i class="icon-file"></i> Report for unallocated line items
+                                </p>
+                                <p>
+                                <i class="icon-file"></i> Report for special projects
+                                </p>
+                                <div class="box-hide-me box-content collapse out">
+                                <p>
+                                <i class="icon-file"></i> Report 5
+                                </p>
+                                <p>
+                                <i class="icon-file"></i> Report 6
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+
+            </div>
+        </div>
+
+        <div id="spinner" class="spinner" style="display:none;">
+            Loading&hellip;
+        </div>
+
+        <footer class="application-footer">
+            <div class="container">
+                <p>SPendPlans admin: 301 888-8888/ spendPlans@someCompany</p>
+                <div class="disclaimer">
+                    <p>All right reserved.</p>
+                    <p>Copyright © BigOrganization</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script type="text/javascript">
+        $(function() {
+            $('#sample-table').tablesorter();
+            $('#datepicker').datepicker();
+            $(".chosen").chosen();
+        });
+    
